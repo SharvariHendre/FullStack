@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Flag using CSS only</title>
+    <style>
+        /* .flag{
+            background-color: black;
+            position: relative;
+            width: 500px;
+            height: 300px;
+            
+        } */
+        .flag p{
+            background-color: orange;
+            height: 100px;
+            width: 500px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+        }
+        .flag > div {
+            background-color: white;
+            height: 100px;
+            width: 500px;
+            position: absolute;
+            top: 100px;
+            left: 0;  
+        }
+        .flag > div p{
+          background-color: green;
+          height: 100px;
+          width: 500px;
+          position: absolute;
+          top: 100px;
+          left: 0;
+        }
+        .flag > div::after { 
+          /* The ::after selector in CSS is a pseudo-element 
+          that allows you to add content after 
+          the content of a selected element, 
+          without modifying the actual HTML structure. 
+          It is commonly used to insert decorative elements, 
+          icons, or additional content dynamically with CSS. */
+        content: ''; /* Create the Ashoka Chakra */
+        position: absolute;
+        top: 20px; /* Center vertically within the white stripe */
+        left: 220px; /* Center horizontally within the white stripe */
+        width: 60px; /* Diameter of the circle */
+        height: 60px;
+        border: 4px solid blue; /* Blue border for the Ashoka Chakra */
+        border-radius: 50%; /* Make it a circle */
+    }
+    p{
+      text-align: center;
+      font-size: large;
+     }
+    </style>
+</head>
+<body>
+    <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of India</p>
+      </div>
+    </div>
+  </div>
+</body>
+</body>
+</html>
