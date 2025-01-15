@@ -1,0 +1,27 @@
+/* Using Combine group selectors for h1 and h2 */
+h1 ,h2{
+    color: blueviolet;
+}
+
+/* Changing the color of "Do these things today to firebrick using child css selector" */
+.box > p { 
+    color: firebrick;
+}
+/* OR 
+.box > .done{
+   color: firebrick;
+}
+*/
+
+/* Using Decendant CSS Selector */
+.box li {
+    color: blue;
+}  
+  /* Chaining Selector */
+li.done{
+    color: seagreen;  
+}
+/* Combining Combiners */
+ul p.done{
+    font-size: 0.5rem;
+}
